@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="soorten kaarten" />
+    <meta name="description" content="information about magic the gathering and how to start playing it"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="grid-container">
+        <header class="navbar">
+            <img src="fotos/logo.png" alt="Website logo" class="logo">
+            <nav>
+                <ul>
+                    <li class="navlink"><a href="index.html">Home</a></li> 
+                    <li class="navlink"><a href="gameplay.html">Gameplay</a></li>
+                    <li class="navlink"><a href="soortenkaarten.html">Soorten kaarten</a></li> 
+                    <li class="navlink"><a href="online.html">Online</a></li>  
+                    <li class="navlink"><a href="begrippen.html">Begrippen</a></li> 
+                    <li class="navlink"><a href="contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+        </header>
+        <section class="form">
+            <p class="contact-p">
+              Heeft u verder nog vragen en/of wilt u nog meer informatie?
+              Dan kunt u hier een berichtje achterlaten. 
+              Ik hoop zo snel mogelijk te kunnen reageren.
+            </p>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Contact Form</legend>
+                
+                <label for="voor-achternaam">Voor- en achternaam:</label>
+                <input type="text" id="voor-achternaam" name="voor-achternaam" required>
+                <label for="Bedrijfsnaam">Bedrijfsnaam:</label>
+                <input type="text" id="Bedrijfsnaam" name="Bedrijfsnaam">
+                
+                <label for="telefoonnummer">Telefoonnummer:</label>
+                <input type="tel" id="telefoonnummer" name="telefoonnummer">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <section class="submit-button">
+                  <input type="submit" value="Submit">
+                </section>
+              </fieldset>
+            </form>
+          </section>
+        
+
+        <footer class="footer">
+            <p>&copy; 2023 - Stijn van Veen</p>
+        </footer>
+    </section>
+</body>
+</html>

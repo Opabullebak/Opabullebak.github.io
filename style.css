@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-color: #EBEDF0;
+}
+@media screen and (min-width: 768px) {
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'navTag navTag navTag navTag navTag navTag'
+            'mainTag mainTag mainTag mainTag mainTag mainTag'
+            'footerTag footerTag footerTag footerTag footerTag footerTag';
+        gap: 20px;
+        padding: 20px;
+    }
+}
+header {
+    grid-area: navTag;
+    background-color: #102B4E;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.navbar nav {
+    margin-left: auto;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  
+}
+
+.navbar li {
+    text-align: right;
+    margin: 0 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.navlink:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.navlink:visited {
+    color: purple;
+}
+
+main {
+    grid-area: mainTag;
+}
+
+article {
+    background-color: #EBEDF0;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footerTag;
+    background-color: #102B4E;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*dit is soorten kaarten*/
+.soortenkaarten-list {
+    padding: 0;
+    margin-left: 17px;
+}
+
+.soortenkaarten-list li {
+    margin: 10px 0;
+}
+
+.soortenkaarten-list li span {
+    display: block; 
+    width: 20px; 
+    text-align: right;
+    margin-right: 10px; 
+}
+
+#article1-soortenKaarten, #article2-soortenKaarten {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.p-soortenkaarten {
+    max-width: 60%;
+    flex: 1;
+}
+  
+  #article1-soortenKaarten-image,
+  #article2-soortenKaarten-image {
+    float: right;
+    max-width: 30%; 
+    margin-left: 10%; 
+  }
+
+/*dit is contact form*/
+.form {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .contact-p {
+    text-align: left;
+    width: 60%;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"], textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    text-align: left; 
+  }
+  
+  input[type="submit"] {
+    background-color: #102B4E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+/*dit is begrippen*/
+#article1-begrippen {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.p-begrippen p {
+    width: 60%;
+    margin-bottom: 50px;
+}
+/*dit is online*/
+.online-list {
+    padding: 0;
+    margin-left: 17px;
+}
+
+.online-list li {
+    margin: 10px 0;
+}
+
+.online-list li span {
+    display: block; 
+    width: 20px; 
+    text-align: right;
+    margin-right: 10px; 
+}
+
+#article1-online, #article2-online {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.p-online {
+    width: 60%;
+} 
+
+.p-online-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.p-online-image {
+    flex: 1;
+    margin: 0 10px;
+    max-width: 30%;
+}
+/*dit is gameplauy*/
+.gameplay-list {
+    padding: 0;
+    margin-left: 17px;
+}
+
+.gameplay-list li {
+    margin: 10px 0;
+}
+
+.gameplay-list li span {
+    display: block; 
+    width: 20px; 
+    text-align: right;
+    margin-right: 10px; 
+}
+
+#article1-gameplay,
+#article2-gameplay,
+#article3-gameplay,
+#article1-gameplay-image,
+#article2-gameplay-image,
+#article3-gameplay-image {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#article1-gameplay .p-gameplay,
+#article2-gameplay .p-gameplay,
+#article3-gameplay .p-gameplay {
+    max-width: 60%;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#article1-gameplay-image,
+#article2-gameplay-image,
+#article3-gameplay-image {
+    max-width: 30%;
+    margin-left: 10%;
+}
+
+.bold-woord {
+    font-weight: bold;
+}
+/*dit is home*/
+.box {
+    background-color: #F2F2F2;
+    border: 2px solid #102B4E;
+    margin: 50px auto;
+    text-align: left;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-titel {
+    background-color: #102B4E;
+    color: #FFF;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.box-artikel {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-artikel p {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.box-img {
+    max-width: 40%; 
+    height: auto;
+    margin: 0;
+}
+.box:nth-of-type(1) {
+    order: 1;
+}
+
+.box:nth-of-type(2) {
+    order: 2;
+}
+
+
+@media screen and (max-width: 767px) {
+    .box:nth-of-type(1) {
+        order: 2;
+    }
+
+    .box:nth-of-type(2) {
+        order: 1;
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.italic {
+    font-style: italic;
+}
+h1 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    line-height: 1.2;
+    text-align: left;
+}
