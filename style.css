@@ -1,3 +1,9 @@
+*{
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-indent: 0%;
+    word-spacing: normal;
+}
 body {
     margin: 0;
     padding: 0;
@@ -61,6 +67,10 @@ nav a {
 
 .navlink:visited {
     color: purple;
+}
+
+.navlink:active {
+    color: red; 
 }
 
 main {
@@ -163,51 +173,74 @@ footer {
     width: 80%;
     margin: auto;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.p-begrippen p {
-    width: 60%;
-    margin-bottom: 50px;
+.p-begrippen {
+    width: 60%; 
+    margin-right: 5%; 
 }
+
+#begrippen-aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.article1-begrippen-image {
+    width: 75%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
 /*dit is online*/
-.online-list {
-    padding: 0;
-    margin-left: 17px;
-}
-
-.online-list li {
-    margin: 10px 0;
-}
-
-.online-list li span {
-    display: block; 
-    width: 20px; 
-    text-align: right;
-    margin-right: 10px; 
-}
-
-#article1-online, #article2-online {
+#article1-online {
     width: 80%;
     margin: auto;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#article2-online {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 200px;
 }
 
 .p-online {
-    width: 60%;
-} 
-
-.p-online-images {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    width: 60%; 
+    margin-right: 5%; 
 }
 
-.p-online-image {
+#article1-online-image {
+    width: 30%; 
+    height: auto; 
+    float: right;
     flex: 1;
-    margin: 0 10px;
-    max-width: 30%;
 }
-/*dit is gameplauy*/
+
+.article2-online-image {
+    width: 100%; 
+    height: auto;
+}
+
+.article2-images {
+    width: auto; 
+    height: 160px;
+    margin-top: 50px;
+    flex: 1;
+}
+
+/*dit is gameplay*/
 .gameplay-list {
     padding: 0;
     margin-left: 17px;
@@ -252,16 +285,23 @@ footer {
     max-width: 30%;
     margin-left: 10%;
 }
+#article1-gameplay-image1 {
+    max-width: 30%;
+    margin-left: 10%;
+    margin-top: 200px;
+}
 
 .bold-woord {
     font-weight: bold;
 }
 /*dit is home*/
 .box {
-    background-color: #F2F2F2;
-    border: 2px solid #102B4E;
+    background-color: #FFF;
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: #102B4E;
     margin: 50px auto;
-    text-align: left;
+    text-align: center; 
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -271,10 +311,13 @@ footer {
 .box-titel {
     background-color: #102B4E;
     color: #FFF;
-    padding: 10px;
+    padding: 10px 0; 
     margin: 0;
+    height: 100%; 
     width: 100%;
-    text-align: center;
+    text-align: center; 
+    font-size: 2em;
+    align-items: center; 
 }
 
 .box-artikel {
@@ -282,44 +325,42 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #FFF;
+    justify-content: center; 
 }
 
 .box-artikel p {
     flex: 1;
     margin: 0 20px;
+    font-size: 1.5em;
 }
 
 .box-img {
-    max-width: 40%; 
+    max-width: 50%;
     height: auto;
-    margin: 0;
-}
-.box:nth-of-type(1) {
-    order: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.box:nth-of-type(2) {
-    order: 2;
-}
-
-
-@media screen and (max-width: 767px) {
-    .box:nth-of-type(1) {
-        order: 2;
-    }
-
-    .box:nth-of-type(2) {
-        order: 1;
-    }
-}
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+figcaption{
+    font-style: italic;
+    text-align: center;
+}
+
 .italic {
     font-style: italic;
 }
+
+.strongTag {
+    font-weight: bold;
+}
+
 h1 {
     font-size: 1em;
     font-weight: bold;
@@ -327,4 +368,58 @@ h1 {
     margin-bottom: 0.67em;
     line-height: 1.2;
     text-align: left;
+}
+
+.emphasized {
+    font-weight: bold;
+}
+
+/*dit is footer*/
+.footer nav {
+    margin-left: auto;
+}
+
+.footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.footer li {
+    text-align: right;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/*dit id cookie message*/
+#cookie-message {
+    position: fixed;
+    bottom: 20px;
+    right: 80%;
+    background-color: #102B4E; 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; 
+    border: 2px solid #102B4E; 
+    z-index: 9999; 
+}
+
+#cookie-message button {
+    background-color: #EBEDF0; 
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
 }
